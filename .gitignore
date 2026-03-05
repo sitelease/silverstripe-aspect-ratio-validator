@@ -1,4 +1,23 @@
-.idea/
-/node_modules/
+# ignore composer and npm folders
+vendor/
+node_modules/
+
+# Ignore caches and maps
+sass-cache
+/resources/
 /**/*.js.map
 /**/*.css.map
+coverage/
+composer.lock
+*.cache
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE files and folders
+.idea/
+.vscode/

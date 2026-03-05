@@ -1,24 +1,41 @@
 {
-  "name": "biffbangpow/silverstripe-imagesize-validator",
-  "description": "Validates the dimensions of an image during upload",
+  "name": "sitelease/silverstripe-aspect-ratio-validator",
+  "description": "Validates the aspect ratio of an image during upload",
   "type": "silverstripe-vendormodule",
-  "minimum-stability": "dev",
-  "license": "proprietary",
+  "keywords": [
+        "sitelease",
+        "silverstripe",
+        "5",
+        "image",
+        "ratio",
+        "validation"
+  ],
   "authors": [
     {
       "name": "James Heathcote",
-      "email": "james.h@biffbangpow.com"
+      "email": "james.h@biffbangpow.com",
+      "role": "Original Developer"
+    },
+    {
+      "name": "Benjamin Blake",
+      "homepage": "https://sitelease.ca",
+      "role": "Developer"
     }
   ],
   "require": {
-    "silverstripe/vendor-plugin": "^1.0",
-    "silverstripe/cms": "^4"
+    "silverstripe/vendor-plugin": "^2.0",
+    "silverstripe/cms": "^5"
   },
+  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "BiffBangPow\\Validators\\": "src/"
+      "Sitelease\\AspectRatioValidator\\": "src/"
     }
   },
-  "extra": {
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "silverstripe/vendor-plugin": true
+    }
   }
 }
